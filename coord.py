@@ -13,15 +13,13 @@ while True:
     ev = donne_ev()
     tev = type_ev(ev)
 
-    # Action dépendant du type d'événement reçu :
-
     if tev == "ClicGauche":
         print("Clic gauche au point", (abscisse(ev), ordonnee(ev)))
         if (ax < abscisse(ev) < bx) and (ay < ordonnee(ev) < by) :
             efface (rect1) 
     elif tev == 'Quiite':
         break
-    else:  # dans les autres cas, on ne fait rien
+    else:  
         pass
 
     mise_a_jour()
