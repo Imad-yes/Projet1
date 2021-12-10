@@ -17,7 +17,7 @@ while True:
         print("Clic gauche au point", (abscisse(ev), ordonnee(ev)))
         if (ax < abscisse(ev) < bx) and (ay < ordonnee(ev) < by) :
             efface (rect1) 
-    elif tev == 'Quiite':
+    elif tev == 'Quitte':
         break
     else:  
         pass
